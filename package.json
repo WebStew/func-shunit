@@ -1,0 +1,42 @@
+{
+  "name": "func-shunit",
+  "version": "0.0.1",
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "description": "Functional Testing with CucmberJS and WebdriverIO and Mocha unit testing",
+  "scripts": {
+    "document:test:functional:suite:steps": "node ./tasks/documentation/test-functional-suite-steps",
+    "document:test:functional:suite:support": "node ./tasks/documentation/test-functional-suite-support",
+    "document:test:functional:results": "node ./tasks/documentation/test-functional-results",
+    "postinstall": "selenium-standalone install",
+    "test:all": "node ./tasks/tests/all",
+    "test:unit": "node ./tasks/tests/unit",
+    "test:functional": "node ./tasks/tests/functional"
+  },
+  "author": "Stuart Pretorius",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.16.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "chai": "^3.5.0",
+    "colors": "^1.1.2",
+    "cucumber": "^1.3.1",
+    "docdash": "^0.4.0",
+    "jsdoc": "^3.4.2",
+    "jsdom": "^9.8.3",
+    "mocha": "^3.1.2",
+    "rimraf": "^2.5.4",
+    "selenium-standalone": "^5.8.0",
+    "shelljs": "^0.7.5",
+    "wdio-allure-reporter": "^0.1.2",
+    "wdio-cucumber-framework": "^0.2.11",
+    "wdio-phantomjs-service": "^0.2.2",
+    "wdio-selenium-standalone-service": "0.0.7",
+    "wdio-spec-reporter": "0.0.3",
+    "webdriverio": "^4.4.0"
+  }
+}
