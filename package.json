@@ -12,6 +12,7 @@
     "document:tests:functional:suite:support": "node ./tasks/documentation/test-functional-suite-support",
     "document:tests:functional:results": "node ./tasks/documentation/test-functional-results",
     "document:tests:unit:results": "node ./tasks/documentation/test-unit-results",
+    "document:tests:unit:coverage": "node ./tasks/documentation/test-unit-coverage",
     "postinstall": "selenium-standalone install",
     "test:all": "node ./tasks/tests/all",
     "test:unit": "node ./tasks/tests/unit",

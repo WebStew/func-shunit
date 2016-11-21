@@ -12,7 +12,7 @@ const shell 	= require ( 'shelljs' 						) ,
 // Run the unit tests
 log.set 	( strings.on , strings.task );
 log.end 	();
-shell.exec 	( 'mocha tests/unit/helpers/browser.js tests/unit/specs/*.spec.js' );
+shell.exec 	( 'mocha tests/unit/helpers/browser.js tests/unit/specs/*.spec.js --colors' );
 log.end 	();
 log.set 	( strings.off , strings.task , 'success' );
 log.end 	();

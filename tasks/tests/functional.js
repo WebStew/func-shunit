@@ -12,7 +12,7 @@ const shell 	= require ( 'shelljs' 						) ,
 // Run the functional tests
 log.set 	( strings.on , strings.task );
 log.end 	();
-shell.exec 	( 'wdio webdriverio.js' );
+shell.exec 	( 'wdio webdriverio.js --colors' );
 log.end 	();
 log.set 	( strings.off , strings.task , 'success' );
 log.end 	();

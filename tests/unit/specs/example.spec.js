@@ -1,11 +1,14 @@
 
+
+import square 				from '../../../development/javascripts/example';
 import chai , { expect } 	from 'chai';
 
 describe ( 'Example Unit Test' , () => {
 
-	it ( 'Should pass this test' , () => {
+	it ( 'This test should pass' , () => {
 
-		expect ( 'test' ).to.have.equal ( 'test' );
-
+		expect ( square ( 2 )).to.have.equal ( 4 );
+		
 	});
+
 });
