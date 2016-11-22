@@ -1,0 +1,27 @@
+{
+	"tags" : {
+		"allowUnknownTags" : false
+	} ,
+	"source" : {
+		"include" 			: [
+			"./tests/functional/steps"
+		] ,
+		"includePattern" 	: ".js$" ,
+		"excludePattern" 	: "(node_modules/|documentation)"
+	} ,
+	"plugins" : [
+		"plugins/markdown"
+	] ,
+	"opts" : {
+		"template" 		: "./node_modules/docdash/" 						,
+		"encoding" 		: "utf8" 											,
+		"destination" 	: "./documentation/tests/functional/suite/steps" 	,
+		"readme" 		: "./tests/functional/steps/readme.md" 				,
+		"recurse" 		: true 												,
+		"verbose" 		: true
+	} ,
+	"templates" : {
+		"cleverLinks" 		: false ,
+		"monospaceLinks" 	: false
+	}
+}
