@@ -1,0 +1,42 @@
+{
+	"tags" : {
+		"allowUnknownTags" : false
+	} ,
+	"source" : {
+		"include" 			: [
+			"./tests/functional/support"
+		] ,
+		"includePattern" 	: ".js$" ,
+		"excludePattern" 	: "(node_modules/|documentation)"
+	} ,
+	"plugins" : [
+		"plugins/markdown"
+	] ,
+	"opts" : {
+		"template" 		: "./node_modules/ink-docstrap/template" 			,
+		"encoding" 		: "utf8" 											,
+		"destination" 	: "./documentation/tests/functional/suite/support" 	,
+		"readme" 		: "./tests/functional/support/readme.md" 			,
+		"recurse" 		: true 												,
+		"verbose" 		: true
+	} ,
+	"templates" : {
+		"logoFile" 				: "" 										,
+		"cleverLinks" 			: false 									,
+		"monospaceLinks" 		: false 									,
+		"dateFormat" 			: "ddd MMM Do YYYY" 						,
+		"outputSourceFiles" 	: true 										,
+		"outputSourcePath" 		: true 										,
+		"systemName" 			: "Cucumber Step Support" 					,
+		"syntaxTheme" 			: "default" 								,
+		"footer" 				: "" 										,
+		"copyright" 			: "Application Copyright © 2012-2017." 		,
+		"navType" 				: "vertical" 								,
+		"theme" 				: "spacelab" 								,
+		"linenums" 				: true 										,
+		"collapseSymbols" 		: false 									,
+		"inverseNav" 			: true 										,
+		"protocol" 				: "html://" 								,
+		"methodHeadingReturns" 	: false
+	}
+}

@@ -1,11 +1,5 @@
 
-import click 			from '../support/actions/click';
-import drag 			from '../support/actions/drag';
-import keypress 		from '../support/actions/keypress';
-import move 			from '../support/actions/move';
-import pause 			from '../support/actions/pause';
-import wait 			from '../support/actions/wait';
-import waitForVisible 	from '../support/actions/wait-for-visible';
+import actions from '../support/actions';
 
 /** 
  * @module 		Actions
@@ -25,7 +19,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I "(click|double click)" on the "(link|button|element)" "([^"]*)?"$/ ,
-		click
+		actions.click
 	);
 
 	/**
@@ -37,7 +31,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I drag element "([^"]*)?" to element "([^"]*)?"$/ ,
-		drag
+		actions.drag
 	);
 
 
@@ -49,7 +43,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I press "([^"]*)?"$/ ,
-		keypress
+		actions.keypress
 	);
 
 	/**
@@ -62,7 +56,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I move to element "([^"]*)?"( with an offset of (\d+), (\d+))*$/ ,
-		move
+		actions.move
 	);
 	
 	/**
@@ -73,7 +67,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I pause for "(\d+)" milliseconds$/ ,
-		pause
+		actions.pause
 	);
 
 	/**
@@ -94,7 +88,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I wait on element "([^"]*)?"( for (\d+)ms)*( to( not)* (be checked|be enabled|be selected|be visible|contain a text|contain a value|exist))*$/ ,
-		wait
+		actions.wait
 	);
 
 	/**
@@ -106,7 +100,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I expect that element "([^"]*)?" to( not)* become visible$/ ,
-		waitForVisible
+		actions.waitForVisible
 	);
 
 };

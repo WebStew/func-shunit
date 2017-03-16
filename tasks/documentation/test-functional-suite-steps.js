@@ -20,7 +20,7 @@ log.end 	();
 // Generate the functional test suite documentation for steps
 log.set 	( strings.on , strings.generate );
 log.end 	();
-shell.exec 	( 'jsdoc -c ./configuration/documentation/tests/functional/suite/jsdoc-steps.json' );
+shell.exec 	( 'jsdoc -c ./configuration/documentation/jsdoc-steps.json' );
 log.end 	();
 log.set 	( strings.off , strings.generate , 'success' );
 log.end 	();

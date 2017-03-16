@@ -1,7 +1,5 @@
 
-import any 		from '../support/content/any';
-import compare 	from '../support/content/compare';
-import contains from '../support/content/contains';
+import content from '../support/content';
 
 /** 
  * @module 		Content
@@ -20,7 +18,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^the "(element|input)" "([^"]*)?" does( not)* contain any text$/ ,
-		any
+		content.any
 	);
 
 	/**
@@ -33,7 +31,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^the element "([^"]*)?" contains( not)* the same text as element "([^"]*)?"$/ ,
-		compare
+		content.compare
 	);
 	
 	/**
@@ -48,6 +46,6 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^the "(element|input)" "([^"]*)?" does( not)* contain the text "([^"]*)?"$/ ,
-		contains
+		content.contains
 	);
 };

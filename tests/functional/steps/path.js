@@ -1,6 +1,5 @@
 
-import contains from '../support/path/contains';
-import matches 	from '../support/path/matches';
+import path from '../support/path';
 
 /**  
  * @module 		Path
@@ -17,7 +16,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I expect the url to( not)* contain "([^"]*)?"$/ ,
-		contains
+		path.contains
 	);
 
 	/**
@@ -29,7 +28,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I expect that the path is( not)* "([^"]*)?"$/ ,
-		matches
+		path.matches
 	);
 
 };

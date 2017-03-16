@@ -1,8 +1,5 @@
 
-import close 	from '../support/prompt/close';
-import contains from '../support/prompt/contains';
-import opened 	from '../support/prompt/opened';
-import set 		from '../support/prompt/set';
+import prompt from '../support/prompt';
 
 /**  
  * @module 		Prompt
@@ -21,7 +18,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I "(accept|dismiss)" the "(alert box|confirmation box|prompt)"$/ ,
-		close
+		prompt.close
 	);
 
 	/**
@@ -35,7 +32,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^the "(alert box|confirm box|prompt)" does( not)* contain the text "([^"]*)?"$/ ,
-		contains
+		prompt.contains
 	);
 
 	/**
@@ -48,7 +45,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^a "(alert box|confirm box|prompt)" is( not)* opened$/ ,
-		opened
+		prompt.opened
 	);
 
 	/**
@@ -59,7 +56,6 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I enter "([^"]*)?" into the prompt$/ ,
-		set
+		prompt.set
 	);
-
 };

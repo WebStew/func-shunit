@@ -1,10 +1,5 @@
 
-import clear 			from '../support/forms/clear';
-import input 			from '../support/forms/input';
-import select 			from '../support/forms/select';
-import selectByIndex 	from '../support/forms/select-by-index';
-import selected 		from '../support/forms/selected';
-import submit 			from '../support/forms/submit';
+import form from '../support/form';
 
 /** 
  * @module 		Forms
@@ -21,7 +16,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^the checkbox "([^"]*)?" is( not)* checked$/ ,
-		selected
+		form.selected
 	);
 
 	/**
@@ -32,7 +27,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I clear the input "([^"]*)?"$/ ,
-		clear
+		form.clear
 	);
 	
 	/**
@@ -46,7 +41,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I (add|set) "([^"]*)?" to the input "([^"]*)?"$/ ,
-		input
+		form.input
 	);
 
 	/**
@@ -60,7 +55,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I select the option with the "(name|value|text)" "([^"]*)?" from element "([^"]*)?"$/ ,
-		select
+		form.select
 	);
 	
 	/**
@@ -72,7 +67,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^the element "([^"]*)?" is( not)* selected$/ ,
-		selected
+		form.selected
 	);
 
 	/**
@@ -84,7 +79,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I select the "(\d+)(st|nd|rd|th)" option for element "([^"]*)?"$/ ,
-		selectByIndex
+		form.selectByIndex
 	);
 
 	/**
@@ -95,7 +90,6 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I submit the form "([^"]*)?"$/ ,
-		submit
+		form.submit
 	);
-	
 };

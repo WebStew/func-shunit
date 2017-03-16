@@ -1,8 +1,5 @@
 
-import contains from '../support/cookie/contains';
-import exists 	from '../support/cookie/exists';
-import reset 	from '../support/cookie/reset';
-import set 		from '../support/cookie/set';
+import cookie from '../support/cookie';
 
 /** 
  * @module 		Cookies
@@ -20,7 +17,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^the cookie "([^"]*)?" does( not)* contain the value "([^"]*)?"$/ ,
-		contains
+		cookie.contains
 	);
 
 	/**
@@ -32,7 +29,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^the cookie "([^"]*)?" does( not)* exist$/ ,
-		exists
+		cookie.exists
 	);
 	
 	/**
@@ -43,7 +40,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I delete the cookie "([^"]*)?"$/ ,
-		reset
+		cookie.reset
 	);
 
 	/**
@@ -55,7 +52,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I set a cookie "([^"]*)?" with the content "([^"]*)?"$/ ,
-		set
+		cookie.set
 	);
 
 };

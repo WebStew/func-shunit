@@ -1,14 +1,5 @@
 
-import close 	from '../support/window/close';
-import closeAll from '../support/window/close-all';
-import focus 	from '../support/window/focus';
-import navigate from '../support/window/navigate';
-import opened 	from '../support/window/opened';
-import resize 	from '../support/window/resize';
-import scroll 	from '../support/window/scroll';
-import title 	from '../support/window/title';
-import url 		from '../support/window/url';
-import window 	from '../support/window/window';
+import window from '../support/window';
 
 /** 
  * @module 		Window
@@ -25,7 +16,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I close the last opened "(window|tab)"$/ ,
-		close
+		window.close
 	);
 
 	/**
@@ -36,7 +27,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I have closed all but the first "(window|tab)"$/ ,
-		closeAll
+		window.closeAll
 	);
 
 	/**
@@ -48,7 +39,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I focus the last opened "(window|tab)"$/ ,
-		focus
+		window.focus
 	);
 
 	/**
@@ -61,7 +52,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I open the "(url|site)" "([^"]*)?"$/ ,
-		navigate
+		window.navigate
 	);
 
 	/**
@@ -73,7 +64,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^a new "(tab|window)" has( not)* been opened$/ ,
-		opened
+		window.opened
 	);
 
 	/**
@@ -85,7 +76,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I resize the screen to "([\d]+)" by "([\d]+)" pixels$/ ,
-		resize
+		window.resize
 	);
 
 	/**
@@ -96,7 +87,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I scroll to element "([^"]*)?"$/ ,
-		scroll
+		window.scroll
 	);
 
 	/**
@@ -108,7 +99,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^the title is( not)* "([^"]*)?"$/ ,
-		title
+		window.title
 	);
 
 	/**
@@ -120,7 +111,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^the page url is( not)* "([^"]*)?"$/ ,
-		url
+		window.url
 	);
 	
 	/**
@@ -132,7 +123,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I expect the url "([^"]*)?" is opened in a new "(tab|window)"$/ ,
-		window
+		window.tab
 	);
 
 };

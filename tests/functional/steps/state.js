@@ -1,13 +1,5 @@
 
-import attribute 	from '../support/state/attribute';
-import enabled 		from '../support/state/enabled';
-import exists 		from '../support/state/exists';
-import focused 		from '../support/state/focused';
-import Klass 		from '../support/state/class';
-import offset 		from '../support/state/offset';
-import onscreen 	from '../support/state/onscreen';
-import size 		from '../support/state/size';
-import visible 		from '../support/state/visible';
+import state from '../support/state';
 
 /** 
  * @module 		State
@@ -28,7 +20,7 @@ module.exports = function () {
 	 */	
 	this.Given (
 		/^the( CSS)* attribute "([^"]*)?" from element "([^"]*)?" is( not)* "([^"]*)?"$/ ,
-		attribute
+		state.attribute
 	);
 
 	/**
@@ -41,7 +33,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^I expect that element "([^"]*)?" to( not)* have the class "([^"]*)?"$/ ,
-		Klass
+		state.class
 	);
 
 	/**
@@ -53,7 +45,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^the element "([^"]*)?" is( not)* enabled$/ ,
-		enabled
+		state.enabled
 	);
 
 	/**
@@ -65,7 +57,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^the element "([^"]*)?" does( not)* exist$/ ,
-		exists
+		state.exists
 	);
 
 	/**
@@ -77,7 +69,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^the element "([^"]*)?" is( not)* focused$/ ,
-		focused
+		state.focused
 	);
 
 	/**
@@ -91,7 +83,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^the element "([^"]*)?" is( not)* positioned at ([\d]+)px on the (x|y) axis$/ ,
-		offset
+		state.offset
 	);
 
 	/**
@@ -103,7 +95,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^the element "([^"]*)?" is( not)* within the viewport$/ ,
-		onscreen
+		state.onscreen
 	);
 
 	/**
@@ -116,7 +108,7 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^the element "([^"]*)?" is( not)* ([\d]+)px in "(height|width)"$/ ,
-		size
+		state.size
 	);
 
 	/**
@@ -127,7 +119,6 @@ module.exports = function () {
 	 */
 	this.Given (
 		/^the element "([^"]*)?" is( not)* visible$/ ,
-		visible
+		state.visible
 	);
-
 };
