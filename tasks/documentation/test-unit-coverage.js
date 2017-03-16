@@ -20,7 +20,7 @@ log.end 	();
 // Generate the unit test results documentation
 log.set 	( strings.on , strings.generate );
 log.end 	();
-shell.exec 	( 'istanbul cover node_modules/mocha/bin/_mocha --colors --dir ./documentation/tests/unit/coverage -- --compilers js:babel-core/register --colors --reporter spec tests/unit/specs' );
+shell.exec 	( 'istanbul cover node_modules/mocha/bin/_mocha --colors --dir ./documentation/tests/unit/coverage -- --require babel-register --colors --reporter spec tests/unit/specs' );
 log.end 	();
 log.set 	( strings.off , strings.generate , 'success' );
 log.end 	();
