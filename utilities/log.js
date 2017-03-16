@@ -1,5 +1,5 @@
 
-const colors = require ( 'colors' );
+const colors = require ( 'colours' );
 
 /**
  * @module 		utilities/log
