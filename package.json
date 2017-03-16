@@ -8,6 +8,8 @@
   },
   "description": "Functional Testing with CucmberJS and WebdriverIO and Mocha unit testing",
   "scripts": {
+	"document:javascripts:complexity": "node ./tasks/documentation/javascripts-complexity",
+	"document:javascripts:vulnerabilities": "node ./tasks/documentation/javascripts-vulnerabilities",
     "document:tests:functional:suite:steps": "node ./tasks/documentation/test-functional-suite-steps",
     "document:tests:functional:suite:support": "node ./tasks/documentation/test-functional-suite-support",
     "document:tests:functional:results": "node ./tasks/documentation/test-functional-results",
@@ -16,8 +18,7 @@
     "postinstall": "selenium-standalone install",
     "test:all": "node ./tasks/tests/all",
     "test:unit": "node ./tasks/tests/unit",
-    "test:functional": "node ./tasks/tests/functional",
-    "test:vulnerabilities": "node ./tasks/tests/vulnerabilities"
+    "test:functional": "node ./tasks/tests/functional"
   },
   "author": "Stuart Pretorius",
   "license": "ISC",
@@ -35,6 +36,7 @@
     "jsdom": "^9.8.3",
     "mocha": "^3.1.2",
     "mochawesome": "^1.5.3",
+    "plato": "^1.7.0",
     "rimraf": "^2.5.4",
     "selenium-standalone": "^5.8.0",
     "shelljs": "^0.7.5",

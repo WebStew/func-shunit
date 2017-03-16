@@ -12,7 +12,7 @@ const shell 	= require ( 'shelljs' 						) ,
 // Run the unit tests
 log.set 	( strings.on , strings.task );
 log.end 	();
-shell.exec 	( 'retire -c --outputformat=text --outputpath=documentation/tests/vulnerabilities/javascript.txt -c' );
+shell.exec 	( 'retire -c --outputformat=text --outputpath=documentation/javascripts/vulnerabilities/index.txt -c' );
 log.end 	();
 log.set 	( strings.off , strings.task , 'success' );
 log.end 	();
