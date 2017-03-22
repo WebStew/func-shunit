@@ -7,6 +7,9 @@ A basic project support bootstrap that will handle documenting, testing, reporti
 $ https://github.com/WebStew/func-shunit.git
 $ cd func-shunit
 $ npm install
+
+// Run all the things
+$npm run func-shunit
 ```
 
 ## Testing
@@ -153,7 +156,7 @@ $ npm run document:javascripts:complexity
 
 ### Security Vulnerabilities
 
-Any JavaScript dependencies your application uses are checked for any known security vulnerabilites using [RetireJS](https://retirejs.github.io/retire.js/).
+Any JavaScript dependencies your application uses are checked known security vulnerabilites in their current version using [RetireJS](https://retirejs.github.io/retire.js/).
 
 **Generate**
 
@@ -166,3 +169,8 @@ $ npm run document:javascripts:vulnerabilities
 ```
 ./documentation/javascripts/vulnerabilities/index.txt
 ```
+
+## Roadmap
+
+* ESLint configuration file
+* [Styleguide] (https://github.com/WebStew/styleguide)
