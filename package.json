@@ -6,7 +6,7 @@
       "es2015"
     ]
   },
-  "description": "Functional Testing with CucmberJS and WebdriverIO and Mocha unit testing",
+  "description": "A basic project support bootstrap that will handle documenting, testing, reporting and security analysis of your application.",
   "scripts": {
     "document:javascripts:application": "node ./tasks/documentation/javascripts-application",
     "document:javascripts:complexity": "node ./tasks/documentation/javascripts-complexity",
