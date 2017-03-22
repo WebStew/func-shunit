@@ -1,6 +1,7 @@
 
 # func-shunit
-A basic project support bootstrap that will handle documenting, testing, reporting and security analysis of your application. It'll even tie your shoe laces!
+
+A front-end support bootstrap that will handle documenting, testing, reporting and security analysis of your application. It'll even tie your shoe laces!
 
 ## Install
 
