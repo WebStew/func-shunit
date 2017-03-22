@@ -1,15 +1,16 @@
+
 # func-shunit
 A basic project support bootstrap that will handle documenting, testing, reporting and security analysis of your application. It'll even tie your shoe laces!
 
 ## Install
 
-```
+```bash
 $ https://github.com/WebStew/func-shunit.git
 $ cd func-shunit
 $ npm install
 
 // Run all the things
-$npm run func-shunit
+$ npm run func-shunit
 ```
 
 ## Testing
@@ -20,7 +21,7 @@ Functional test suite driven by [WebdriverIO](http://webdriver.io/), [Selenium](
 
 **Run**
 
-```
+```bash
 $ npm run test:functional
 ```
 
@@ -30,7 +31,7 @@ Unit test driven by [Mocha](https://mochajs.org/) and extended with the [ChaiJS]
 
 **Run**
 
-```
+```bash
 $ npm run test:unit
 ```
 
@@ -44,7 +45,7 @@ This documentation is aimed at the developerment team who are responsible for de
 
 **Generate**
 
-```
+```bash
 $ npm run document:javascripts:application
 ```
 
@@ -60,7 +61,7 @@ This documentation is aimed at non technical stakeholders that would like to get
 
 **Generate**
 
-```
+```bash
 $ npm run document:tests:functional:suite:steps
 ```
 
@@ -76,7 +77,7 @@ This documentation is aimed at developers and covers the JavaScript implementati
 
 **Generate**
 
-```
+```bash
 $ npm run document:tests:functional:suite:support
 ```
 
@@ -94,7 +95,7 @@ Unit tests results site generated with [mochawesome](https://www.npmjs.com/packa
 
 **Generate**
 
-```
+```bash
 $ npm run document:tests:unit:results
 ```
 
@@ -110,7 +111,7 @@ Unit test coverage results site generated with [Instanbul](https://github.com/go
 
 **Generate**
 
-```
+```bash
 $ npm run document:tests:unit:coverage
 ```
 
@@ -126,7 +127,7 @@ Functional test results site generated with [Allure](http://allure.qatools.ru/) 
 
 **Generate**
 
-```
+```bash
 $ npm run document:tests:functional:results
 ```
 
@@ -144,7 +145,7 @@ Application JavaScript source code complexity site generated using [Plato](https
 
 **Generate**
 
-```
+```bash
 $ npm run document:javascripts:complexity
 ```
 
@@ -160,7 +161,7 @@ Any JavaScript dependencies your application uses are checked known security vul
 
 **Generate**
 
-```
+```bash
 $ npm run document:javascripts:vulnerabilities
 ```
 
@@ -173,4 +174,4 @@ $ npm run document:javascripts:vulnerabilities
 ## Roadmap
 
 * ESLint configuration file
-* [Styleguide] (https://github.com/WebStew/styleguide)
+* Application [Styleguide](https://github.com/WebStew/styleguide)
